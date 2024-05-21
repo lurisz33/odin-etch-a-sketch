@@ -1,6 +1,6 @@
 const defaultGridSize = 16;
 setSquareSize(defaultGridSize);
-getSquareSize();
+setTimeout(getSquareSize, 1000);
 function getSquareSize() {
     let userSquareInput = prompt("Type in the size of the grid (ex: 20 for a 20 x 20 grid)");
     while(!(Number.isInteger(userSquareInput) || userSquareInput < 0 || userSquareInput <= 100)) {
